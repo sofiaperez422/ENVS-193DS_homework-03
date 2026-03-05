@@ -1,0 +1,19 @@
+---
+title: "Quarto"
+format: html
+editor: visual
+---
+```{r}
+#| label: set-up
+#| message: false
+library(tidyverse)
+library(here)
+library(janitor)
+library(readxl)
+salinity <- read_csv(here("data",
+                         "salinity-pickleweed.csv"))
+personal_data <- read_csv(here("data",
+                               "Personal Data 3.4.2026.csv"))
+```
+
+GitHub Repository: https://github.com/sofiaperez422/ENVS-193DS_homework-03
