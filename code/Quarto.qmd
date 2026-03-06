@@ -36,9 +36,8 @@ The appropriate tests to determine the strength of the relationship between sali
 #| label: salinity visualization
 ggplot(data = salinity,
        (aes(x = pickleweed,
-            y = salinity_mS_cm,
-            color = "coral3"))) +
-  geom_point() +
+            y = salinity_mS_cm))) +
+  geom_point(color = "darkorchid") +
   labs(title = "Salinity increases as pickleweed biomass increases",
        x = "California pickleweed biomass (g)",
        y = "Salinity (mS/cm)") +
@@ -47,6 +46,31 @@ ggplot(data = salinity,
 ```
 
 ## c.
+
+### Check assumptions
+
+```{r}
+#| label: monotonic relationship between variables
+ggplot(data = salinity,
+       (aes(x = pickleweed,
+            y = salinity_mS_cm))) +
+  geom_point(color = "dodgerblue4") +
+  labs(title = "Monotonic relationship between pickleweed biomass and salinity",
+       x = "California pickleweed biomass (g)",
+       y = "Salinity (mS/cm)") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+The assumptions I checked for were independent observations and for a monotonic relationship between the variables. Independent observations can be affirmed through the method of data collection and how each individual pickleweed plant was independently observed for biomass and soil salinity. The monotonic relationship can be checked visually by plotting the data in relationship to one another. Doing this will let us visualize how increases in pickleweed biomass may relate to the salinity, which in this case we see that salinity increases with pickleweed biomass increases, showing a positive monotonic relationship.
+
+### Run test
+
+```{r}
+#| label: Spearman rank correlation
+cor.test(salinity$salinity_mS_cm, salinity$pickleweed, # run a correlation test to check strength between salinity and biomass
+         method = "spearman") # specifcy spearman rank correlation
+```
 
 ## d.
 
