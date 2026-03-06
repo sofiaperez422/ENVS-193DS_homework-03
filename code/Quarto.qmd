@@ -162,4 +162,6 @@ The figure pretty clearly represents their statistics involving a comparison of 
 
 ## c.
 
+The authors handled visual clutter pretty well, as the organization of treatments and years make it more digestible and not too overwhelming since it is a lot of data. The treatment types also being listed underneath in a vertical tilted style also helps so that it can still fit without being hard to read. There is a lot of data fit into this graph relating to several means of carbon stocks in different plants over two different years across multiple treatments, but there is not too much ink taking up the figure itself. The authors do use themed colors and hatching for the visualization, but the bars are pretty skinny and the legend is also kept at a reasonable size.
+
 ## d.
