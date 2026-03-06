@@ -85,12 +85,45 @@ From the test, we are able to see that generally the biomass of pickleweed will 
 ```{r}
 #| label: Pearson's correlation
 cor.test(salinity$salinity_mS_cm, salinity$pickleweed, # run a correlation test to check strength between salinity and biomass
-         method = "pearson") # specifcy pearson's correlation
+         method = "pearson") # specify pearson's correlation
 ```
+
+The two tests would have led to the same decision as they both show a positive moderate relationship between pickleweed biomass and soil salinity, since Pearson's r = 0.53 is very similar to Spearman $\rho$ = 0.59, and with both having p-values less than the significance level of 0.05 (Pearson p = 0.009, Spearman p = 0.003), the null that the true correlation/rho of the pickleweed biomass and soil salinity is equal to 0 would be rejected.
 
 # Problem 2. Personal data
 
 ## a.
+
+```{r}
+#| label: jitter plot of class/no class
+ggplot(data = personal_data, # use my_data frame 
+       aes(x = class, # set x-axis 
+           y = time_with_mobile_game_active_min, # set y-axis 
+           color = class)) + # color by yes or no class 
+  geom_jitter(width = 0.04,
+              height = 0,
+              size = 3) + # make size bigger 
+  labs(title = "Daily Mobile Game Activity with/without class", # create title 
+       x = "Class", # label x-axis 
+       y = "Time with mobile game active (min)") + # label y-axis 
+  scale_color_manual(values = c("no" = "blueviolet", # color points 
+                                "yes" = "cadetblue4")) + 
+  theme_light() + # change theme 
+  theme(legend.position = "none") # hide legend
+```
+
+```{r}
+#| label: scatter plot of time at friends
+ggplot(data = personal_data,  # use my_data frame 
+       aes(x = time_spent_at_friends_hrs, # set x-axis 
+           y = time_with_mobile_game_active_min)) + # set y-axis 
+  geom_point(size = 5, # plot points and make size bigger 
+             color = "maroon") + # change color
+  labs(title = "Daily Mobile Game Activity around friends", # create title 
+       x = "Time spent at friends' (hrs)", # label x-axis 
+       y = "Time with mobile game active (min)") + # labal y-axis 
+  theme_light() # change theme 
+```
 
 ## b.
 
