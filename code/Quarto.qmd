@@ -158,6 +158,8 @@ excessive removal of long-term carbon storage.
 
 ## b.
 
+The figure pretty clearly represents their statistics involving a comparison of multiple means across multiple treatments, and it is ordered nicely to show a decrease in the response variable measured across the treatments. The x-axis being the treatment type while also organizing the different carbon-storing plants measured by the year it was surveyed is very clear. The bars themselves represent the means and the error bars represent the standard error, and the 2008 means rendered significantly different by the statistical tests are indicated by different letters.
+
 ## c.
 
 ## d.
