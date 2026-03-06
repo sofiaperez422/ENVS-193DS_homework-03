@@ -151,6 +151,11 @@ For my data, affective visualization can look like a drawing of one of the backg
 
 ## a.
 
+The statistical tests included in this paper are Analysis of variance (ANOVA) and Tukey HSD mean comparison. The response variable is carbon (C) stocks in MgCha-1. The predictor variable is wildfire risk mitigation treatment. They use these tests to answer the question of what mitigation treatment(s) is most effective in reducing wildfire emissions when a wildfire occurs while also minimizing
+excessive removal of long-term carbon storage.
+
+![](images/clipboard-1848114590.jpeg)
+
 ## b.
 
 ## c.
