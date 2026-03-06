@@ -103,7 +103,8 @@ ggplot(data = personal_data, # use my_data frame
   geom_jitter(width = 0.04,
               height = 0,
               size = 3) + # make size bigger 
-  labs(title = "Daily Mobile Game Activity with/without class", # create title 
+  labs(title = "Daily mobile game activity with/without class", # create title 
+       subtitle = "Mar. 4, 2026", # subtitle of most recent observation
        x = "Class", # label x-axis 
        y = "Time with mobile game active (min)") + # label y-axis 
   scale_color_manual(values = c("no" = "blueviolet", # color points 
@@ -119,13 +120,18 @@ ggplot(data = personal_data,  # use my_data frame
            y = time_with_mobile_game_active_min)) + # set y-axis 
   geom_point(size = 5, # plot points and make size bigger 
              color = "maroon") + # change color
-  labs(title = "Daily Mobile Game Activity around friends", # create title 
+  labs(title = "Daily mobile game activity around friends", # create title
+       subtitle = "Mar. 4, 2026", # subtitle of most recent observation
        x = "Time spent at friends' (hrs)", # label x-axis 
        y = "Time with mobile game active (min)") + # labal y-axis 
   theme_light() # change theme 
 ```
 
 ## b.
+
+**Figure 1. Daily mobile game activity with/without class.** Points represent individual date observations of time with mobile game active for the day. The points on the left side visualize days where I did not spend any time in class, and the points on the right side visualize days where I did go to class.
+
+**Figure 2. Daily mobile game activity around friends.** Points represent individual date observations of time with mobile game active for the day compared to the time I spent over at a friend's place that same day.
 
 # Problem 3. Affective Visualization
 
