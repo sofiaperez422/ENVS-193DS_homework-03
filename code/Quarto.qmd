@@ -137,6 +137,8 @@ ggplot(data = personal_data,  # use my_data frame
 
 ## a.
 
+For my data, affective visualization can look like a drawing of one of the backgrounds from the mobile game with an element across the whole drawing to represent the points of the scatterplot. It would basically be the scatter plot of time spent visiting friends in relation to time with the game open, but as an art piece. I could also do a scatter plot of time spent at lecture compared to time with time spent on the game as another option, or I could combine the two and use different visual elements to represent them. A brainstorm I currently have is to do a darker scenic background with the points being fireflies or some sort of light.
+
 ## b.
 
 ## c.
