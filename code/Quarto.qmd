@@ -22,8 +22,6 @@ personal_data <- read_csv(here("data",
   clean_names() # save personal data as object and clean column names
 ```
 
-GitHub Repository: https://github.com/sofiaperez422/ENVS-193DS_homework-03
-
 # Problem 1. Slough soil salinity
 
 ## a.
