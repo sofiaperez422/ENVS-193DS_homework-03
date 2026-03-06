@@ -1,19 +1,83 @@
 ---
-title: "Quarto"
+title: "Homework 3"
+author: "Sofia Perez"
+date: "2026-03-04"
 format: html
 editor: visual
 ---
+
+## Setup
+
 ```{r}
 #| label: set-up
 #| message: false
-library(tidyverse)
-library(here)
-library(janitor)
-library(readxl)
+library(tidyverse) # general use
+library(here) # file organization
+library(janitor) # cleaning data frames
+library(readxl) # reading excel files
 salinity <- read_csv(here("data",
-                         "salinity-pickleweed.csv"))
+                         "salinity-pickleweed.csv")) # save salinity-pickleweed data as salinity
 personal_data <- read_csv(here("data",
-                               "Personal Data 3.4.2026.csv"))
+                               "Personal Data 3.4.2026.csv")) |> 
+  clean_names() # save personal data as object and clean column names
 ```
 
 GitHub Repository: https://github.com/sofiaperez422/ENVS-193DS_homework-03
+
+# Problem 1. Slough soil salinity
+
+## a.
+
+The appropriate tests to determine the strength of the relationship between salinity and California pickleweed biomass are Pearson's correlation and Spearman rank correlation. Both of these correlation tests describe the strength of the relationship between two variables while indicating directionality, but Pearson's correlation is the parametric version that is used when there is a linear relationship between variables while Spearman rank correlation is the non-parametric version used when there is a monotonic relationship between variables.
+
+## b.
+
+```{r}
+#| label: salinity visualization
+ggplot(data = salinity,
+       (aes(x = pickleweed,
+            y = salinity_mS_cm,
+            color = "coral3"))) +
+  geom_point() +
+  labs(title = "Salinity increases as pickleweed biomass increases",
+       x = "California pickleweed biomass (g)",
+       y = "Salinity (mS/cm)") +
+  theme_minimal() +
+  theme(legend.position = "none") 
+```
+
+## c.
+
+## d.
+
+## e.
+
+## f.
+
+# Problem 2. Personal data
+
+## a.
+
+## b.
+
+# Problem 3. Affective Visualization
+
+## a.
+
+## b.
+
+## c.
+
+## d.
+
+## e.
+
+# Problem 4.
+
+## a.
+
+## b.
+
+## c.
+
+## d.
