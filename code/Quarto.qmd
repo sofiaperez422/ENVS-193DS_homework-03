@@ -34,15 +34,14 @@ The appropriate tests to determine the strength of the relationship between sali
 
 ```{r}
 #| label: salinity visualization
-ggplot(data = salinity,
-       (aes(x = pickleweed,
-            y = salinity_mS_cm))) +
-  geom_point(color = "darkorchid") +
-  labs(title = "Salinity increases as pickleweed biomass increases",
-       x = "California pickleweed biomass (g)",
-       y = "Salinity (mS/cm)") +
-  theme_minimal() +
-  theme(legend.position = "none") 
+ggplot(data = salinity, # use salinity data
+       (aes(x = pickleweed, # set pickleweed biomass as x-axis
+            y = salinity_mS_cm))) + # set salinity as y-axis
+  geom_point(color = "darkorchid") + # set data point color
+  labs(title = "Salinity increases as pickleweed biomass increases", # create title
+       x = "California pickleweed biomass (g)", # label x-axis
+       y = "Salinity (mS/cm)") + # label y-axis
+  theme_minimal() # change graph theme
 ```
 
 ## c.
@@ -51,15 +50,14 @@ ggplot(data = salinity,
 
 ```{r}
 #| label: monotonic relationship between variables
-ggplot(data = salinity,
-       (aes(x = pickleweed,
-            y = salinity_mS_cm))) +
-  geom_point(color = "dodgerblue4") +
-  labs(title = "Monotonic relationship between pickleweed biomass and salinity",
-       x = "California pickleweed biomass (g)",
-       y = "Salinity (mS/cm)") +
-  theme_minimal() +
-  theme(legend.position = "none")
+ggplot(data = salinity,# use salinity data
+       (aes(x = pickleweed, # set pickleweed as x-axis
+            y = salinity_mS_cm))) + # set salinity as y-axis
+  geom_point(color = "dodgerblue4") + # change points color
+  labs(title = "Monotonic relationship between pickleweed biomass and salinity", # create title
+       x = "California pickleweed biomass (g)", # label x-axis
+       y = "Salinity (mS/cm)") + # label y-axis
+  theme_minimal() # change graph theme
 ```
 
 The assumptions I checked for were independent observations and for a monotonic relationship between the variables. Independent observations can be affirmed through the method of data collection and how each individual pickleweed plant was independently observed for biomass and soil salinity. The monotonic relationship can be checked visually by plotting the data in relationship to one another. Doing this will let us visualize how increases in pickleweed biomass may relate to the salinity, which in this case we see that salinity increases with pickleweed biomass increases, showing a positive monotonic relationship.
@@ -73,6 +71,10 @@ cor.test(salinity$salinity_mS_cm, salinity$pickleweed, # run a correlation test 
 ```
 
 ## d.
+
+To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Pearson rank correlation test. I chose this test because when we visualize the data, the distribution appears to have a relationship that may be non-linear (monotonic). I also chose it because of the small amount of observations in the data set making it have a small sample size, which would make a non-parametric test more appropriate.
+
+We found a moderate relationship between pickleweed biomass and salinity (Spearman $\rho$ = 0.59, S = 824, p = 0.003, $\alpha$ = 0.05).
 
 ## e.
 
