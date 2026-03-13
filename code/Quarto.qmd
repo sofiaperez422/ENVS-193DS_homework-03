@@ -4,6 +4,7 @@ author: "Sofia Perez"
 date: "2026-03-04"
 format: html
 editor: visual
+toc: true # use this to display a table of contents
 ---
 
 ## Setup
@@ -70,7 +71,7 @@ cor.test(salinity$salinity_mS_cm, salinity$pickleweed, # run a correlation test 
 
 ## d.
 
-To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Pearson rank correlation test. I chose this test because when we visualize the data, the distribution appears to have a relationship that may be non-linear (monotonic). I also chose it because of the small amount of observations in the data set resulting in a small sample size, which would make a non-parametric test more appropriate.
+To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Speaman rank correlation test. I chose this test because when we visualize the data, the distribution shows a consistent change between the two variables in the positive direction, a monotonic relationship as explained in 1c. I also chose it because of the small amount of observations in the data set resulting in a small sample size, which would make a non-parametric test more appropriate.
 
 We found a moderate relationship between pickleweed biomass and salinity (Spearman $\rho$ = 0.59, S = 824, p = 0.003, $\alpha$ = 0.05).
 

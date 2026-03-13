@@ -105,10 +105,51 @@ window.Quarto = {
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#problem-1.-slough-soil-salinity" id="toc-problem-1.-slough-soil-salinity" class="nav-link" data-scroll-target="#problem-1.-slough-soil-salinity">Problem 1. Slough soil salinity</a>
+  <ul class="collapse">
+  <li><a href="#a." id="toc-a." class="nav-link" data-scroll-target="#a.">a.</a></li>
+  <li><a href="#b." id="toc-b." class="nav-link" data-scroll-target="#b.">b.</a></li>
+  <li><a href="#c." id="toc-c." class="nav-link" data-scroll-target="#c.">c.</a>
+  <ul class="collapse">
+  <li><a href="#check-assumptions" id="toc-check-assumptions" class="nav-link" data-scroll-target="#check-assumptions">Check assumptions</a></li>
+  <li><a href="#run-test" id="toc-run-test" class="nav-link" data-scroll-target="#run-test">Run test</a></li>
+  </ul></li>
+  <li><a href="#d." id="toc-d." class="nav-link" data-scroll-target="#d.">d.</a></li>
+  <li><a href="#e." id="toc-e." class="nav-link" data-scroll-target="#e.">e.</a></li>
+  <li><a href="#f." id="toc-f." class="nav-link" data-scroll-target="#f.">f.</a></li>
+  </ul></li>
+  <li><a href="#problem-2.-personal-data" id="toc-problem-2.-personal-data" class="nav-link" data-scroll-target="#problem-2.-personal-data">Problem 2. Personal data</a>
+  <ul class="collapse">
+  <li><a href="#a.-1" id="toc-a.-1" class="nav-link" data-scroll-target="#a.-1">a.</a></li>
+  <li><a href="#b.-1" id="toc-b.-1" class="nav-link" data-scroll-target="#b.-1">b.</a></li>
+  </ul></li>
+  <li><a href="#problem-3.-affective-visualization" id="toc-problem-3.-affective-visualization" class="nav-link" data-scroll-target="#problem-3.-affective-visualization">Problem 3. Affective Visualization</a>
+  <ul class="collapse">
+  <li><a href="#a.-2" id="toc-a.-2" class="nav-link" data-scroll-target="#a.-2">a.</a></li>
+  <li><a href="#b.-2" id="toc-b.-2" class="nav-link" data-scroll-target="#b.-2">b.</a></li>
+  <li><a href="#c.-1" id="toc-c.-1" class="nav-link" data-scroll-target="#c.-1">c.</a></li>
+  <li><a href="#d.-1" id="toc-d.-1" class="nav-link" data-scroll-target="#d.-1">d.</a></li>
+  <li><a href="#e.-1" id="toc-e.-1" class="nav-link" data-scroll-target="#e.-1">e.</a></li>
+  </ul></li>
+  <li><a href="#problem-4." id="toc-problem-4." class="nav-link" data-scroll-target="#problem-4.">Problem 4.</a>
+  <ul class="collapse">
+  <li><a href="#a.-3" id="toc-a.-3" class="nav-link" data-scroll-target="#a.-3">a.</a></li>
+  <li><a href="#b.-3" id="toc-b.-3" class="nav-link" data-scroll-target="#b.-3">b.</a></li>
+  <li><a href="#c.-2" id="toc-c.-2" class="nav-link" data-scroll-target="#c.-2">c.</a></li>
+  <li><a href="#d.-2" id="toc-d.-2" class="nav-link" data-scroll-target="#d.-2">d.</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -226,7 +267,7 @@ sample estimates:
 </section>
 <section id="d." class="level2">
 <h2 class="anchored" data-anchor-id="d.">d.</h2>
-<p>To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Pearson rank correlation test. I chose this test because when we visualize the data, the distribution appears to have a relationship that may be non-linear (monotonic). I also chose it because of the small amount of observations in the data set resulting in a small sample size, which would make a non-parametric test more appropriate.</p>
+<p>To evaluate the strength of the relationship between pickleweed biomass and soil salinity, I used a Speaman rank correlation test. I chose this test because when we visualize the data, the distribution shows a consistent change between the two variables in the positive direction, a monotonic relationship as explained in 1c. I also chose it because of the small amount of observations in the data set resulting in a small sample size, which would make a non-parametric test more appropriate.</p>
 <p>We found a moderate relationship between pickleweed biomass and salinity (Spearman <span class="math inline">\(\rho\)</span> = 0.59, S = 824, p = 0.003, <span class="math inline">\(\alpha\)</span> = 0.05).</p>
 </section>
 <section id="e." class="level2">
